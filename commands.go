@@ -1,9 +1,10 @@
 package main
 
 import (
-	"github.com/mitchellh/cli"
-	"github.com/srspnda/consul-check/command"
 	"os"
+
+	"github.com/F0rth/consul-check/command"
+	"github.com/mitchellh/cli"
 )
 
 // Commands is the mapping of all the available Consul check commands.
@@ -25,6 +26,11 @@ func init() {
 		},
 		"cpuload": func() (cli.Command, error) {
 			return &command.CpuloadCommand{
+				Ui: ui,
+			}, nil
+		},
+		"service": func() (cli.Command, error) {
+			return &command.ServiceCommand{
 				Ui: ui,
 			}, nil
 		},

@@ -30,3 +30,9 @@ by a systems administrator.
 ## Author
 
 * [Justin Poole](mailto:sdpnda@gmail.com)
+
+## Contributors
+
+* [Guillaume Sellier](github.com/f0rth)
+
+added service check command
